@@ -10,6 +10,7 @@ FROM confluent/platform
 
 MAINTAINER contact@confluent.io
 
+RUN apt-get install -y netcat
 COPY schema-registry-docker.sh /usr/local/bin/
 
 #TODO Schema Registry needs a log directory.
